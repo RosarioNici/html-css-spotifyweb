@@ -5,18 +5,68 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="../html-css-spotifyweb/css/style.css">
-    <title>SpotifY</title>
+    <title>Spotify</title>
 </head>
 
 <body>
 
     <main>
         <div class="container flex">
-            <aside class="navigation"></aside>
+            <aside class="navigation">
+                <div class="logo">
+                    <img id="logo-small" src="../html-css-spotifyweb/img/logo-small.svg" alt="Logo Spotify">
+                    <div class="icon-aside"><i class="fa-solid fa-house"></i></div>
+                    <div class="icon-aside"><i class="fa-solid fa-magnifying-glass"></i></div>
+                    <div class="icon-aside"><i class="fa-solid fa-lines-leaning"></i></div>
+                </div>
+                <div class="user">
+                    <div class="icon-aside"><i class="fa-solid fa-circle-arrow-down"></i></div>
+                    <div class="icon-aside"><i class="fa-solid fa-circle-user"></i></div>
+
+
+                </div>
+            </aside>
             <div class="container-main">
-                <div class="up-bar"></div>
-                <div class="album-section"></div>
+                <div class="up-bar">
+                    <div><button id="upgrade">EFFETTUA L'UPGRADE</button></div>
+                </div>
+                <div class="album-section">
+                    <div class="navigation-album">
+                        <a href="#">IN EVIDENZA</a>
+                        <a href="#">PODCAST</a>
+                        <a href="#">CLASSIFICHE</a>
+                        <a href="#">GENERI E MOOD</a>
+                        <a href="#">NUOVE USCITE</a>
+                        <a href="#">SCOPRI</a>
+                    </div>
+                    <div class="album-container">
+                        <div class="recently-played">
+                            <h1>Recently played</h1>
+                            <div class="albums">
+                                <div class="card-album">
+                                    <img src="./img/metal_lifting.jpg" alt="Mix Mettallica">
+                                    <h3>Heavy Metal</h3>
+                                    <h5>Subtitle</h5>
+                                </div>
+                                <div class="card-album"><img src="./img/stranger.jpeg" alt="Stranger things soundtrack">
+                                </div>
+                                <div class="card-album"><img src="./img/aquietplace.jpeg" alt="A quiet place"></div>
+                                <div class="card-album"><img src="./img/split.jpeg" alt="Split"></div>
+                                <div class="card-album"><img src="./img/cure.jpeg" alt="Wellness"></div>
+                                <div class="card-album"><img src="./img/sinister.jpeg" alt="Sinister"></div>
+
+                            </div>
+                        </div>
+
+
+                    </div>
+
+
+                </div>
             </div>
         </div>
 

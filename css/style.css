@@ -11,7 +11,6 @@ body {
     height: 100vh;
 }
 
-/* Utilities */
 footer {
     height: 10%;
 }
@@ -20,11 +19,22 @@ main {
     height: 90%;
 }
 
+/* Utilities */
+
+
 
 .flex {
     display: flex;
 }
 
+a {
+    text-decoration: none;
+    font-size: small;
+    font-weight: 700;
+    color: #7d7f84;
+}
+
+/* Main */
 .album-section {
     background-color: #141922;
     height: 85%;
@@ -33,12 +43,20 @@ main {
 .up-bar {
     background-color: #080b12;
     height: 15%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
 }
 
 .navigation {
     background-color: black;
     height: 100%;
-    width: 60px;
+    width: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
 }
 
 .container {
@@ -49,8 +67,64 @@ main {
     flex-grow: 1;
 }
 
-/* Header */
-/* Main */
+#logo-small {
+    width: 35px;
+}
+
+
+.icon-aside {
+    color: #b3b3b3;
+    font-size: x-large;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.fa-circle-arrow-down {
+    font-size: x-small;
+    margin-bottom: 20px;
+}
+
+#upgrade {
+    color: white;
+    width: 220px;
+    height: 40px;
+    border: 1px solid white;
+    background-color: #080b1200;
+    border-radius: 20px;
+    margin-right: 10px;
+    font-weight: 600;
+}
+
+.album-section {
+    overflow-y: scroll;
+}
+
+.navigation-album {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.sub-navigation-album {
+    display: flex;
+    justify-content: center;
+
+}
+
+.navigation-album>* {
+    margin-top: 30px;
+
+}
+
+img {
+    width: 200px;
+}
+
+.card-album {
+    width: calc(90% / 2);
+    text-align: center;
+}
+
 /* Footer */
 
 .container-footer {
