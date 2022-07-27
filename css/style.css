@@ -1,0 +1,64 @@
+/* General Rules */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: sans-serif;
+    height: 100vh;
+}
+
+/* Utilities */
+footer {
+    height: 10%;
+}
+
+main {
+    height: 90%;
+}
+
+
+.flex {
+    display: flex;
+}
+
+.album-section {
+    background-color: #141922;
+    height: 85%;
+}
+
+.up-bar {
+    background-color: #080b12;
+    height: 15%;
+}
+
+.navigation {
+    background-color: black;
+    height: 100%;
+    width: 60px;
+}
+
+.container {
+    height: 100%;
+}
+
+.container-main {
+    flex-grow: 1;
+}
+
+/* Header */
+/* Main */
+/* Footer */
+
+.container-footer {
+    background-color: #282828;
+    height: 100%;
+}
+
+/* Media query-xs */
+/* Media query-s */
+/* Media query-md */
+/* Media query-l */
