@@ -38,7 +38,10 @@ h3 {
 
 /* Utilities */
 
-
+.flex-column {
+    display: flex;
+    flex-direction: column;
+}
 
 .flex {
     display: flex;
@@ -168,6 +171,32 @@ img {
 .container-footer {
     background-color: #282828;
     height: 100%;
+}
+
+#img-footer {
+    width: 40px;
+}
+
+.fa-thin {
+    width: 20px;
+}
+
+.footer-text {
+    font-size: small;
+    color: #7d7f84;
+}
+
+.icon-track {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: white;
+    padding: 10px;
+    width: 140px;
+}
+
+.icon-track>* {
+    margin: 3px;
 }
 
 /* Media query-xs */
