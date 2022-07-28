@@ -70,6 +70,10 @@ h2,
     color: white;
 }
 
+h6 {
+    visibility: hidden;
+}
+
 /* Media query-xs */
 /* Main */
 /* #region */
@@ -84,6 +88,13 @@ h2,
     display: flex;
     justify-content: end;
     align-items: center;
+}
+
+#underline-green {
+    width: 20px;
+    height: 3px;
+    margin: 0 auto;
+    color: greenyellow;
 }
 
 .navigation {
@@ -104,10 +115,13 @@ h2,
 
 #logo-small {
     width: 35px;
+    margin-left: 10px;
+    visibility: visible;
 }
 
 
-.icon-aside {
+.icon-aside,
+.icon-aside-download {
     color: #b3b3b3;
     font-size: x-large;
     margin-top: 10px;
@@ -137,6 +151,7 @@ h2,
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
+    text-align: center;
 }
 
 .sub-navigation-album {
@@ -150,7 +165,13 @@ h2,
 
 }
 
-img {
+#icon-user,
+#download,
+hr {
+    display: none;
+}
+
+.album-img {
     width: 200px;
 }
 
@@ -177,6 +198,12 @@ img {
 
 .descrition-album {
     margin-top: 20px;
+}
+
+#logo-normal {
+    display: none;
+    width: 150px;
+    margin: 20px;
 }
 
 /* #endregion */
@@ -247,14 +274,14 @@ img {
 }
 
 .time-bar {
-    width: 80px;
+    width: 90%;
     height: 3px;
     border-radius: 2px;
     background-color: grey;
 }
 
 .time-bar-volume {
-    width: 60px;
+    width: 30%;
     height: 3px;
     border-radius: 2px;
     background-color: grey;
@@ -267,8 +294,88 @@ img {
     background-color: white;
 }
 
+.width-fixed {
+    width: calc(90% / 3);
+}
+
 /* #endregion */
 
 /* Media query-s */
+
+
+@media screen and (min-width: 650px) {
+    .navigation {
+        width: 600px;
+    }
+
+    #logo-normal {
+        display: inherit;
+
+    }
+
+    #logo-small {
+        visibility: hidden;
+    }
+
+    .navigation {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .icon-aside {
+        text-align: left;
+        margin-left: 10px;
+    }
+
+    .icon-aside-download {
+        margin-left: 10px;
+        text-align: inherit;
+    }
+
+    h6 {
+        visibility: visible;
+        display: inline;
+        font-weight: 400;
+
+    }
+
+    .margin-top {
+        margin-top: -40px;
+
+    }
+
+    #download {
+        font-size: small;
+        font-weight: 700;
+        margin-left: 10px;
+    }
+
+    hr {
+        width: 180px;
+        margin: 0 auto;
+        border: 0.3px solid grey;
+    }
+
+    #icon-user {
+        display: inline;
+        font-size: medium;
+        color: white;
+        margin-left: 10px;
+    }
+
+    #icon-user,
+    #download,
+    hr {
+        display: inherit;
+    }
+
+    a {
+        width: calc(90% / 3);
+    }
+}
+
+
+
 /* Media query-md */
 /* Media query-l */
