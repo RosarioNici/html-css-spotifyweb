@@ -19,14 +19,13 @@ main {
     height: 90%;
 }
 
+/* Utilities */
 h2 {
-    color: white;
     margin-bottom: 10px;
     margin-top: 30px;
 }
 
 h5 {
-    color: grey;
     font-size: x-small;
     margin-top: 10px;
     margin-bottom: 20px;
@@ -36,11 +35,10 @@ h3 {
     font-size: inherit;
 }
 
-/* Utilities */
-
 .flex-column {
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 
 .flex {
@@ -51,14 +49,30 @@ a {
     text-decoration: none;
     font-size: small;
     font-weight: 700;
-    color: #7d7f84;
 }
 
 .margin {
     margin: 5px;
 }
 
+a,
+h5,
+.footer-text {
+    color: grey;
+}
+
+h2,
+#upgrade,
+.descrition-album,
+.icon-track,
+.setting,
+.riproduction-icons {
+    color: white;
+}
+
+/* Media query-xs */
 /* Main */
+/* #region */
 .album-section {
     background-color: #141922;
     height: 90%;
@@ -76,9 +90,6 @@ a {
     background-color: black;
     height: 100%;
     width: 40px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     justify-content: space-between;
     padding: 10px;
 }
@@ -109,7 +120,6 @@ a {
 }
 
 #upgrade {
-    color: white;
     width: 220px;
     height: 40px;
     border: 1px solid white;
@@ -166,12 +176,13 @@ img {
 
 
 .descrition-album {
-    color: white;
     margin-top: 20px;
 }
 
-/* Footer */
+/* #endregion */
 
+/* Footer */
+/* #region */
 .container-footer {
     background-color: #282828;
     height: 100%;
@@ -190,21 +201,18 @@ img {
 
 .footer-text {
     font-size: small;
-    color: #7d7f84;
 }
 
 .icon-track {
     display: flex;
     align-items: center;
     justify-content: space-around;
-    color: white;
     padding: 10px;
     width: 140px;
 }
 
 .setting {
     padding: 10px;
-    color: white;
     display: flex;
     align-items: center;
 }
@@ -235,7 +243,6 @@ img {
 .riproduction-icons {
     display: flex;
     justify-content: space-between;
-    color: white;
     margin-bottom: 5px;
 }
 
@@ -260,7 +267,8 @@ img {
     background-color: white;
 }
 
-/* Media query-xs */
+/* #endregion */
+
 /* Media query-s */
 /* Media query-md */
 /* Media query-l */

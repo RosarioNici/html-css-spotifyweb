@@ -16,12 +16,19 @@
 
     <main>
         <div class="container flex">
-            <aside class="navigation">
+            <aside class="navigation flex-column">
                 <div class="logo">
-                    <img id="logo-small" src="../html-css-spotifyweb/img/logo-small.svg" alt="Logo Spotify">
-                    <div class="icon-aside"><i class="fa-solid fa-house"></i></div>
-                    <div class="icon-aside"><i class="fa-solid fa-magnifying-glass"></i></div>
-                    <div class="icon-aside"><i class="fa-solid fa-lines-leaning"></i></div>
+                    <div id="logo-normal"><img src="./img/logo.svg" alt="Logo Spotify"></div>
+                    <img id="logo-small" src="./img/logo-small.svg" alt="Logo Spotify">
+                    <div class="icon-aside"><i class="fa-solid fa-house"></i>
+                        <h6>Home</h6>
+                    </div>
+                    <div class="icon-aside"><i class="fa-solid fa-magnifying-glass"></i>
+                        <h6>Cerca</h6>
+                    </div>
+                    <div class="icon-aside"><i class="fa-solid fa-lines-leaning"></i>
+                        <h6>La tua libreria</h6>
+                    </div>
                 </div>
                 <div class="user">
                     <div class="icon-aside"><i class="fa-solid fa-circle-arrow-down"></i></div>
@@ -48,42 +55,44 @@
                             <h2>Recently played</h2>
                             <div class="albums">
                                 <div class="card-album">
-                                    <div><img src="./img/metal_lifting.jpg" alt="Mix Mettallica"></div>
+                                    <div><img class="album-img" src="./img/metal_lifting.jpg" alt="Mix Mettallica">
+                                    </div>
                                     <div class="descrition-album">
                                         <h3>Heavy Metal</h3>
                                         <h5>Subtitle</h5>
                                     </div>
                                 </div>
                                 <div class="card-album">
-                                    <div><img src="./img/stranger.jpeg" alt="Stranger things soundtrack"></div>
+                                    <div><img class="album-img" src="./img/stranger.jpeg"
+                                            alt="Stranger things soundtrack"></div>
                                     <div class="descrition-album">
                                         <h3>Stranger Things vol.1 (a Netflix original series Saundtrack</h3>
                                         <h5>Kayle Dixon and Michael Stain</h5>
                                     </div>
                                 </div>
                                 <div class="card-album">
-                                    <div><img src="./img/aquietplace.jpeg" alt="A quiet place"></div>
+                                    <div><img class="album-img" src="./img/aquietplace.jpeg" alt="A quiet place"></div>
                                     <div class="descrition-album">
                                         <h3>A quite place</h3>
                                         <h5>Subtitle</h5>
                                     </div>
                                 </div>
                                 <div class="card-album">
-                                    <div><img src="./img/split.jpeg" alt="Split"></div>
+                                    <div><img class="album-img" src="./img/split.jpeg" alt="Split"></div>
                                     <div class="descrition-album">
                                         <h3>Split</h3>
                                         <h5>Subtitle</h5>
                                     </div>
                                 </div>
                                 <div class="card-album">
-                                    <div><img src="./img/cure.jpeg" alt="Wellness"></div>
+                                    <div><img class="album-img" src="./img/cure.jpeg" alt="Wellness"></div>
                                     <div class="descrition-album">
                                         <h3>A cure for wellness</h3>
                                         <h5>Subtitle</h5>
                                     </div>
                                 </div>
                                 <div class="card-album">
-                                    <div><img src="./img/sinister.jpeg" alt="Sinister"></div>
+                                    <div><img class="album-img" src="./img/sinister.jpeg" alt="Sinister"></div>
                                     <div class="descrition-album">
                                         <h3>Sinister</h3>
                                         <h5>Subtitle</h5>
@@ -94,13 +103,13 @@
                             <h5>Più ascolti, più accurati saranno i suggerimenti</h5>
                             <div class="albums">
                                 <div class="card-album">
-                                    <div><img src="./img/radar.jpeg" alt="Mix Mettallica"></div>
+                                    <div><img class="album-img" src="./img/radar.jpeg" alt="Mix Mettallica"></div>
                                     <div class="descrition-album">
                                         <h3>Relasa Radar</h3>
                                     </div>
                                 </div>
                                 <div class="card-album">
-                                    <div><img src="./img/mixdaily.jpeg" alt="Mix Mettallica"></div>
+                                    <div><img class="album-img" src="./img/mixdaily.jpeg" alt="Mix Mettallica"></div>
                                     <div class="descrition-album">
                                         <h3>Daily Mix</h3>
                                     </div>
@@ -110,14 +119,15 @@
                             <h5>Più ascolti, più accurati saranno i suggerimenti</h5>
                             <div class="albums">
                                 <div class="card-album">
-                                    <div><img class="radius-img" src="./img/youg.jpeg" alt="Mix Mettallica">
+                                    <div><img class="radius-img album-img" src="./img/youg.jpeg" alt="Mix Mettallica">
                                     </div>
                                     <div class="descrition-album">
                                         <h3>Heavy Metal</h3>
                                     </div>
                                 </div>
                                 <div class="card-album">
-                                    <div><img class="radius-img" src="./img/einaudi.jpeg" alt="Mix Mettallica">
+                                    <div><img class="radius-img album-img" src="./img/einaudi.jpeg"
+                                            alt="Mix Mettallica">
                                     </div>
                                     <div class="descrition-album">
                                         <h3>Ludovico Einaudi</h3>
@@ -133,47 +143,55 @@
     </main>
     <footer>
         <div class="container-footer">
-            <div class="icon-track">
-                <div><img id="img-footer" src="./img/sinister.jpeg" alt="Track Sinister"></div>
-                <div>
-                    <h4 class="footer-text-title"> Sinister</h4>
-                    <p class="footer-text">Brano</p>
-                    <p class="footer-text">Nome</p>
-                </div>
-                <div class="flex-column">
-                    <i class="fa-regular fa-heart"></i>
-                    <i class="fa-regular fa-folder"></i>
+            <div class="width-fixed">
+                <div class="icon-track">
+                    <div><img id="img-footer" src="./img/sinister.jpeg" alt="Track Sinister"></div>
+                    <div>
+                        <h4 class="footer-text-title"> Sinister</h4>
+                        <p class="footer-text">Brano</p>
+                        <p class="footer-text">Nome</p>
+                    </div>
+                    <div class="flex-column">
+                        <i class="fa-regular fa-heart"></i>
+                        <i class="fa-regular fa-folder"></i>
+                    </div>
                 </div>
             </div>
-            <div class="riproduction-track">
-                <div class="riproduction-icons">
-                    <i class="fa-solid fa-shuffle"></i>
-                    <i class="fa-solid fa-backward-step"></i>
-                    <i class="fa-regular fa-circle-play"></i>
-                    <i class="fa-solid fa-forward-step"></i>
-                    <i class="fa-solid fa-rotate-right"></i>
+            <div class="width-fixed">
+                <div class="riproduction-track">
+                    <div class="riproduction-icons">
+                        <i class="fa-solid fa-shuffle"></i>
+                        <i class="fa-solid fa-backward-step"></i>
+                        <i class="fa-regular fa-circle-play"></i>
+                        <i class="fa-solid fa-forward-step"></i>
+                        <i class="fa-solid fa-rotate-right"></i>
+                    </div>
+                    <div class="time flex">
+                        <p>0:25</p>
+                        <div class="time-bar">
+                            <div class="evidence-time-bar">
+                            </div>
+                        </div>
+                        <p>4:35</p>
+                    </div>
                 </div>
-                <div class="time flex">
-                    <p>0:25</p>
-                    <div class="time-bar">
+            </div>
+            <div class="width-fixed">
+                <div class="setting flex">
+                    <div class="felx">
+                        <i class="fa-solid fa-list"></i>
+                        <i class="fa-solid fa-desktop"></i>
+                        <i class="fa-solid fa-volume-high"></i>
+                    </div>
+                    <div class="time-bar-volume">
                         <div class="evidence-time-bar">
                         </div>
                     </div>
-                    <p>4:35</p>
                 </div>
+            </div>
 
-            </div>
-            <div class="setting flex">
-                <div>
-                    <i class="fa-solid fa-list"></i>
-                    <i class="fa-solid fa-desktop"></i>
-                    <i class="fa-solid fa-volume-high"></i>
-                </div>
-                <div class="time-bar-volume">
-                    <div class="evidence-time-bar">
-                    </div>
-                </div>
-            </div>
+
+
         </div>
     </footer>
 
