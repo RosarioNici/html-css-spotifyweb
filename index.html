@@ -15,6 +15,7 @@
 <body>
 
     <main>
+        <!-- container aside with the navigation bar -->
         <div class="container flex">
             <aside class="navigation flex-column">
                 <div class="logo">
@@ -31,6 +32,7 @@
                             <h6>La tua libreria</h6>
                         </div>
                     </div>
+                    <!-- hidden part on xs layout -->
                     <div class="playlist">
                         <h2>PLAYLIST</h2>
                         <div class="playlist-add flex">
@@ -47,6 +49,7 @@
                             <h3 class="playlist-title-noicon">Nome playlist</h3>
                         </div>
                     </div>
+                    <!-- /hidden part on xs layout -->
                 </div>
 
                 <div class="user">
@@ -59,10 +62,10 @@
                         <i class="fa-solid fa-circle-user"></i>
                         <h3 id="icon-user">Jhon Doe</h3>
                     </div>
-
-
                 </div>
             </aside>
+            <!-- /container aside with the navigation bar -->
+
             <div class="container-main">
                 <div class="up-bar">
                     <div><button id="upgrade">EFFETTUA L'UPGRADE</button></div>
@@ -165,14 +168,13 @@
                 </div>
             </div>
         </div>
-
     </main>
     <footer>
         <div class="container-footer">
             <div class="width-fixed">
                 <div class="icon-track">
                     <div><img id="img-footer" src="./img/sinister.jpeg" alt="Track Sinister"></div>
-                    <div>
+                    <div class="margin-negative">
                         <h4 class="footer-text-title"> Sinister</h4>
                         <div>
                             <p class="footer-text">Brano</p>
@@ -180,7 +182,7 @@
                         </div>
 
                     </div>
-                    <div class="flex-column">
+                    <div class="flex-column track-prefer">
                         <i class="fa-regular fa-heart"></i>
                         <i class="fa-regular fa-folder"></i>
                     </div>
@@ -206,10 +208,14 @@
                 </div>
             </div>
             <div class="width-fixed">
-                <div class="setting flex">
-                    <div class="felx">
+                <div class="setting felx-around">
+                    <div>
                         <i class="fa-solid fa-list"></i>
+                    </div>
+                    <div>
                         <i class="fa-solid fa-desktop"></i>
+                    </div>
+                    <div>
                         <i class="fa-solid fa-volume-high"></i>
                     </div>
                     <div class="time-bar-volume">
@@ -218,9 +224,6 @@
                     </div>
                 </div>
             </div>
-
-
-
         </div>
     </footer>
 

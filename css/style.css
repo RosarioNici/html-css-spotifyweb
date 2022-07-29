@@ -45,6 +45,11 @@ h3 {
     display: flex;
 }
 
+.felx-around {
+    display: flex;
+    justify-content: space-around;
+}
+
 a {
     text-decoration: none;
     font-size: small;
@@ -175,8 +180,9 @@ h6 {
 }
 
 .playlist-title-noicon {
-    margin: 10px;
+    margin: 20px 10px;
     color: grey;
+    font-size: small;
 
 }
 
@@ -243,7 +249,7 @@ hr {
     height: 100%;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 #img-footer {
@@ -262,8 +268,7 @@ hr {
     display: flex;
     align-items: center;
     justify-content: space-around;
-    padding: 10px;
-    width: 140px;
+
 }
 
 .setting {
@@ -298,7 +303,8 @@ hr {
 .riproduction-icons {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 5px;
+    align-items: center;
+    margin-bottom: 10px;
 }
 
 .time-bar {
@@ -320,6 +326,10 @@ hr {
     height: 3px;
     border-radius: 2px;
     background-color: white;
+}
+
+.fa-circle-play {
+    font-size: x-large;
 }
 
 .width-fixed {
@@ -408,7 +418,6 @@ hr {
 
     .footer-text {
         display: inline;
-        margin-left: 5px;
     }
 
 }
@@ -416,4 +425,38 @@ hr {
 /* #endregion */
 
 /* Media query-md */
+/* #region */
+@media screen and (min-width: 950px) {
+    hr {
+        width: 250px;
+    }
+
+    .card-album {
+        width: 140px;
+    }
+
+    .album-img {
+        width: 155px;
+    }
+
+    .navigation {
+        width: 300px;
+    }
+
+    .track-prefer {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .margin-negative {
+        margin-left: -30px;
+    }
+
+    .fa-folder {
+        margin-left: 30px;
+    }
+}
+
+/* #endregion */
 /* Media query-l */
