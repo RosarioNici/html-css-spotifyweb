@@ -57,8 +57,13 @@ a {
 
 a,
 h5,
-.footer-text {
+.footer-text,
+.playlist-add {
     color: grey;
+}
+
+.playlist {
+    display: none;
 }
 
 h2,
@@ -128,6 +133,10 @@ h6 {
     text-align: center;
 }
 
+.icon-aside-download {
+    margin-left: 5px;
+}
+
 .fa-circle-arrow-down {
     font-size: x-small;
     margin-bottom: 20px;
@@ -163,6 +172,25 @@ h6 {
 .navigation-album>* {
     margin-top: 30px;
 
+}
+
+.playlist-title-noicon {
+    margin: 10px;
+    color: grey;
+
+}
+
+.fa-square-plus {
+    font-size: xx-large;
+    margin: 10px;
+}
+
+.playlist-title {
+    color: grey;
+}
+
+.playlist-add {
+    align-items: center;
 }
 
 #icon-user,
@@ -301,7 +329,7 @@ hr {
 /* #endregion */
 
 /* Media query-s */
-
+/* #region */
 
 @media screen and (min-width: 650px) {
     .navigation {
@@ -329,7 +357,7 @@ hr {
     }
 
     .icon-aside-download {
-        margin-left: 10px;
+        margin-left: 20px;
         text-align: inherit;
     }
 
@@ -373,9 +401,19 @@ hr {
     a {
         width: calc(90% / 3);
     }
+
+    .playlist {
+        display: inherit;
+    }
+
+    .footer-text {
+        display: inline;
+        margin-left: 5px;
+    }
+
 }
 
-
+/* #endregion */
 
 /* Media query-md */
 /* Media query-l */
