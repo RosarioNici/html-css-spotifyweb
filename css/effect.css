@@ -1,0 +1,23 @@
+.play-hover {
+    width: 30px;
+    color: white;
+    opacity: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 45%;
+    left: 45%;
+}
+
+.position {
+    position: relative;
+}
+
+.album-img:hover {
+    opacity: 0.6;
+}
+
+.album-img:hover:hover .play-hover {
+    opacity: 1;
+}
