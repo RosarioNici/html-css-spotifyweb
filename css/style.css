@@ -479,6 +479,14 @@ hr {
         width: 50%;
         margin: 0 auto;
     }
+
+    .album-img {
+        width: 180px;
+    }
+
+    .card-album {
+        width: 170px;
+    }
 }
 
 /* #endregion */
