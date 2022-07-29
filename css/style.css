@@ -273,7 +273,6 @@ hr {
 .icon-track {
     display: flex;
     align-items: center;
-    justify-content: space-around;
 
 }
 
@@ -455,8 +454,8 @@ hr {
         justify-content: space-around;
     }
 
-    .margin-negative {
-        margin-left: -30px;
+    .margin-right {
+        margin-right: 20px;
     }
 
     .fa-folder {
@@ -466,3 +465,20 @@ hr {
 
 /* #endregion */
 /* Media query-l */
+/* #region */
+@media screen and (min-width: 1400px) {
+    .container-footer {
+        justify-content: space-between;
+    }
+
+    .setting {
+        padding-left: 100px;
+    }
+
+    .navigation-album {
+        width: 50%;
+        margin: 0 auto;
+    }
+}
+
+/* #endregion */
