@@ -437,11 +437,11 @@ hr {
     }
 
     .card-album {
-        width: 140px;
+        width: calc(90% / 4);
     }
 
     .album-img {
-        width: 155px;
+        width: 100%;
     }
 
     .navigation {
@@ -481,11 +481,11 @@ hr {
     }
 
     .album-img {
-        width: 180px;
+        width: 100%
     }
 
     .card-album {
-        width: 170px;
+        width: calc(90% / 6)
     }
 }
 
