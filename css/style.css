@@ -153,7 +153,7 @@ h6 {
     border: 1px solid white;
     background-color: #080b1200;
     border-radius: 20px;
-    margin-right: 10px;
+    margin-right: 30px;
     font-weight: 600;
 }
 
@@ -204,6 +204,11 @@ h6 {
 .playlist-add {
     align-items: center;
 }
+
+.padding-left {
+    padding-left: 10px;
+}
+
 
 #icon-user,
 #download,
@@ -327,7 +332,7 @@ hr {
 }
 
 .evidence-time-bar {
-    width: 20px;
+    width: 35%;
     height: 3px;
     border-radius: 2px;
     background-color: white;
