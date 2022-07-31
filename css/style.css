@@ -161,6 +161,19 @@ h6 {
     overflow-y: scroll;
 }
 
+.play-hover {
+    color: white;
+    position: absolute;
+    top: 45%;
+    left: 45%;
+    visibility: hidden;
+
+}
+
+.position {
+    position: relative;
+}
+
 .navigation-album {
     display: flex;
     justify-content: space-around;
@@ -320,23 +333,35 @@ hr {
 
 .time-bar {
     width: 90%;
-    height: 3px;
+    height: 5px;
     border-radius: 2px;
     background-color: grey;
 }
 
 .time-bar-volume {
     width: 30%;
-    height: 3px;
+    height: 5px;
     border-radius: 2px;
     background-color: grey;
 }
 
 .evidence-time-bar {
     width: 35%;
-    height: 3px;
+    height: 5px;
     border-radius: 2px;
     background-color: white;
+    position: relative;
+}
+
+#circle-bar {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: white;
+    position: absolute;
+    right: 0px;
+    top: -5px;
+    visibility: hidden;
 }
 
 .fa-circle-play {

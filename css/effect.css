@@ -1,27 +1,11 @@
-/* .play-hover { 
-    width: 30px;
-    color: white;
-    display: none;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-    top: 45%;
-    left: 45%;
-}
-
-.position {
-    position: relative;
+.position:hover .play-hover {
+    visibility: visible;
+    transform: scale(2);
 }
 
 .album-img:hover {
-    filter: invert(0.5);
+    opacity: .6;
 }
-
-.album-img:hover .play-hover {
-    visibility: 0;
-}
-*/
 
 
 #upgrade:hover {
@@ -31,7 +15,6 @@
 
 a:hover {
     color: white;
-
 }
 
 h6:hover {
@@ -40,7 +23,6 @@ h6:hover {
 
 .fa-square-plus:hover {
     color: white;
-
 }
 
 .underline:hover {
@@ -67,6 +49,10 @@ h6:hover {
     transform: scale(1.2);
 }
 
-.time-bar:hover .evidence-time-bar {
-    color: greenyellow;
+.evidence-time-bar:hover {
+    background-color: greenyellow;
+}
+
+.evidence-time-bar:hover #circle-bar {
+    visibility: visible;
 }
